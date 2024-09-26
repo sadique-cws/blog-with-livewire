@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::view("/","home")->name('homepage');
 
 Route::get("/view/{post_id}", function($post_id){
-    return view("singlePost");
+    return view("singlePost", ['post_id' => $post_id]);
 })->name('post.show');
 
 Route::get("/filter", function(){
@@ -26,4 +26,12 @@ Route::prefix("admin")->group(function(){
     Route::get("/topics", function(){
         return view("admin.topic");
     })->name("admin.topics");
+
+    Route::get("/posts", function(){
+        return view("admin.manage-post");
+    })->name("admin.posts");
+
+    Route::get("/posts/create", function(){
+        return view("admin.insert-post");
+    })->name("admin.posts.create");
 });

@@ -10,24 +10,24 @@
       <!-- Card 1 -->
       <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6">
         <h2 class="text-xl font-semibold text-gray-800">Users</h2>
-        <p class="text-3xl font-bold text-blue-600 mt-4">1,234</p>
+        <p class="text-3xl font-bold text-blue-600 mt-4">{{\App\Models\User::count()}}</p>
       </div>
   
       <!-- Card 2 -->
       <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6">
-        <h2 class="text-xl font-semibold text-gray-800">Orders</h2>
-        <p class="text-3xl font-bold text-blue-600 mt-4">567</p>
+        <h2 class="text-xl font-semibold text-gray-800">Topics</h2>
+        <p class="text-3xl font-bold text-blue-600 mt-4">{{\App\Models\Topic::count()}}</p>
       </div>
   
       <!-- Card 3 -->
       <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6">
-        <h2 class="text-xl font-semibold text-gray-800">Revenue</h2>
-        <p class="text-3xl font-bold text-green-600 mt-4">$24,580</p>
+        <h2 class="text-xl font-semibold text-gray-800">Posts</h2>
+        <p class="text-3xl font-bold text-green-600 mt-4">{{\App\Models\Post::count()}}</p>
       </div>
   
       <!-- Card 4 -->
       <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6">
-        <h2 class="text-xl font-semibold text-gray-800">Support Tickets</h2>
+        <h2 class="text-xl font-semibold text-gray-800">Draft</h2>
         <p class="text-3xl font-bold text-red-600 mt-4">45</p>
       </div>
     </div>
